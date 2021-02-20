@@ -36,43 +36,60 @@ Class {
 { #category : #accessing }
 Counter >> count [
 
-^ count
+   ^ count
 ]
 
 { #category : #accessing }
-Counter >> count: arg [
-	"comment stating purpose of instance-side message"
-	"scope: class-variables  &  instance-variables"	
+Counter >> count: anInteger [
+
 			
-count := arg.
+ count := anInteger.
 
 ]
 
 { #category : #API }
 Counter >> decrement [ 
-	"comment stating purpose of instance-side message"
-	"scope: class-variables  &  instance-variables"	
-			
+
 count := count - 1.
 
 ]
 
 { #category : #API }
 Counter >> decrement2 [
-	"comment stating purpose of instance-side message"
-	"scope: class-variables  &  instance-variables"	
-			
+
 count := count - 2.
 
 ]
 
 { #category : #API }
 Counter >> decrement3 [
-	"comment stating purpose of instance-side message"
-	"scope: class-variables  &  instance-variables"	
+
 			
 count := count - 3.
 
+]
+
+{ #category : #API }
+Counter >> decrement4 [
+
+			
+count := count - 4.
+
+]
+
+{ #category : #API }
+Counter >> increment [
+	"comment stating purpose of instance-side message"
+	"scope: class-variables  &  instance-variables"	
+			
+count := count + 1.
+
+]
+
+{ #category : #acccessing }
+Counter >> increment2 [
+	
+			count := count + 2.
 ]
 
 { #category : #printing }

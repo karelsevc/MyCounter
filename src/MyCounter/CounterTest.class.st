@@ -43,3 +43,27 @@ c increment2.
 self assert: c count equals: 6.
 
 ]
+
+{ #category : #tests }
+CounterTest >> testInitialize [
+|c|
+c := Counter new.
+self assert: c count equals: 0.
+
+]
+
+{ #category : #tests }
+CounterTest >> testStartingAt [
+|c|
+c := Counter startingAt: 5.
+self assert: (c increment; count) equals: 6.
+
+]
+
+{ #category : #tests }
+CounterTest >> testStartingSituation [
+|c|
+c := Counter new.
+self assert: c count equals: 0.
+
+]

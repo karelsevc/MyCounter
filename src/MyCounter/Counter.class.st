@@ -86,7 +86,7 @@ count := count + 1.
 
 ]
 
-{ #category : #acccessing }
+{ #category : #accessing }
 Counter >> increment2 [
 	
 			count := count + 2.
